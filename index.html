@@ -1,0 +1,24 @@
+<html><head>
+    <script type="text/javascript">
+    function c(){
+            var im_object=document.getElementById("im");
+            var im_name=document.getElementById("txt").value;
+            im_object.src="https://2.08bk.com/?url="+im_name;
+        }
+    </script>
+	</head>
+	<body>
+<div>
+    <input type="text" id="txt" placeholder="请输入视频链接（支持大部分哔哩哔哩、爱奇艺、腾讯视频链接）：" style="width: 500px;">
+    <button onclick="c()">点击查询</button>
+</div>
+<span style="position: absolute; width: 100%; text-align: center; color: #CCCCCC; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 9px;">
+    仅可播放，暂不支持下载
+</span>
+<div class="wrapper">
+<div class="dd2">
+	<iframe id="im" src="" style="object-fit:contain;width:1050px;height:560px"></frame>
+</div>
+</div>
+</body>
+</html>
